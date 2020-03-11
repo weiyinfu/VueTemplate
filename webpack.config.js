@@ -39,6 +39,10 @@ const webpackConfig = {
         use: ["vue-style-loader", "css-loader", "less-loader"]
       },
       {
+        test: /\.ts$/,
+        use: ["ts-loader"]
+      },
+      {
         test: /\.(png|jpg|gif|svg|ttf|woff|eot|woff2)$/,
         loader: "url-loader",
         options: {
