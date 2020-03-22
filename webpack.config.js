@@ -12,8 +12,8 @@ const mode = "development"
 // const mode = "production"
 const distPath = path.join(__dirname, "./dist")
 const genPath = path.join(__dirname, "gen")
-const development = mode == "development"
-const production = mode == "production"
+const development = mode === "development"
+const production = mode === "production"
 
 const webpackConfig = {
   mode: mode,
@@ -43,7 +43,7 @@ const webpackConfig = {
         use: ["ts-loader"]
       },
       {
-        test: /\.(png|jpg|gif|svg|ttf|woff|eot|woff2)$/,
+        test: /\.(png|jpg|gif|svg|ttf|mp3|wav|woff|eot|woff2)$/,
         loader: "url-loader",
         options: {
           name: "[name].[ext]?[hash]",
@@ -53,7 +53,7 @@ const webpackConfig = {
     ]
   },
   resolve: {
-    extensions: [".js", ".vue", ".json"],
+    extensions: [".ts",".js", ".vue", ".json"],
     alias: {
       vue: "vue/dist/vue.js"
     }
@@ -66,7 +66,8 @@ const webpackConfig = {
     new webpack.HotModuleReplacementPlugin(),
     new CopyWebpackPlugin([
       {
-        from: path.join(__dirname, "./public")
+        from: path.join(__dirname, "./static"),
+        to:'static'
       }
     ]),
     {
