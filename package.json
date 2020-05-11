@@ -1,5 +1,5 @@
 {
-  "name": "VueTemplate",
+  "name": "vue-template",
   "version": "1.0.0",
   "description": "Vue模板",
   "main": "main.js",
@@ -7,14 +7,14 @@
     "lib": "lib"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.19.2",
     "babel-cli": "^6.26.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-loader": "^8.0.5",
     "normalize.css": "^8.0.1",
     "babel-plugin-dynamic-import-webpack": "^1.1.0",
     "body-parser": "^1.18.3",
-    "chalk": "^2.4.1",
+    "chalk": "^4.0.0",
     "cheerio": "^1.0.0-rc.2",
     "cloc": "^2.4.0",
     "cnpm": "^6.0.0",

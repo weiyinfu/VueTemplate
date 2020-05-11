@@ -6,7 +6,7 @@
   </el-container>
 </template>
 <script>
-const haha = require("../js/haha.ts");
+const haha = require("./haha.ts");
 export default {
   data() {
     return {
@@ -17,7 +17,7 @@ export default {
 };
 </script>
 <style lang="less">
-@import url("../common.less");
+@import url("./common.less");
 .Index {
   width: 100%;
   height: 100%;
