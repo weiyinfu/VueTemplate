@@ -1,4 +1,5 @@
-一套简单的Vue模板
+一套简单的Vue模板【Deprecated，vue-cli更加简洁好用】
+
 # 特点
 * 支持多个页面，是否使用单页面用户自己决定，便于调试
 * 集成了typescript
